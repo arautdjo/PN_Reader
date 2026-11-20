@@ -1,0 +1,97 @@
+.contenedor_front{
+    position: absolute;
+    min-width: 450px;
+    max-width: 550px;
+    /* min-height: 300px; */
+    height: 350px;
+    /* background-color: #0A6247; */
+   /* Efeito de Vidro Verde (Glassmorphism baseado no bloco de vidro) */
+/* Fundo com efeito de lente/vidro: mais claro e translúcido no centro */
+/* Efeito de Vidro com o Verde Metálico/Automotivo da imagem */
+/* background: linear-gradient(
+  275deg, 
+  rgba(46, 214, 44, 0.85) 0%,   
+  rgba(15, 138, 24, 0.88) 50%,   
+  rgba(5, 75, 12, 0.92) 100%     
+); */
+
+background: linear-gradient(
+    275deg, 
+    rgba(46, 214, 44, 0.95) 0%,   /* Verde topo mais transparente (antes era 0.85) */
+    rgba(15, 138, 24, 0.92) 50%,   /* Verde intermediário mais transparente (antes era 0.88) */
+    rgba(5, 75, 12, 0.95) 100%     /* Sombra base mais transparente (antes era 0.92) */
+  );
+
+/* Desfoque para manter o aspecto translúcido/envidraçado */
+backdrop-filter: blur(12px) saturate(160%);
+-webkit-backdrop-filter: blur(12px) saturate(160%);
+
+/* Borda com reflexo metálico/vítreo */
+border: 1px solid rgba(255, 255, 255, 0.35);
+border-top: 1px solid rgba(255, 255, 255, 0.6);   /* Brilho superior forte simulando reflexo na lataria */
+border-bottom: 1px solid rgba(0, 40, 5, 0.5);     /* Sombra inferior de acabamento */
+border-radius: 15%;
+
+/* Sombras internas (brilho de curvatura) e externa */
+box-shadow: 
+    0 1px 4px rgba(255, 255, 255, 0.4),  /* Reflexo de luz superior interno */
+    0 0 16px rgba(100, 255, 100, 0.15),  /* Brilho difuso no miolo */
+   0 10px 30px rgba(2, 40, 8, 0.45);          /* Sombra projetada externa */
+
+  /* margin: 0 auto; */
+    /* position: relative; */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor_front h1{
+    /* display: block; */
+    position: relative;
+    font-size:45px;
+    /* margin: 10%; */
+    width: 300px;
+    top:35%;
+    margin: 0 auto;
+    /* color: rgb(241, 230, 230); */
+    color: white;
+
+}
+
+.ancoradouro{
+    position: absolute;
+}
+
+.miolinho{
+    position: relative;
+    top:35%;   
+
+}
+
+.miolinho input[type=text]{
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 27%;
+    border:none;
+    outline: none;
+    margin-top: 5%;
+    padding-top: 4px;
+}
+
+.miolinho hr{
+    width: 100px;
+}
+
+.miolinho button[type=submit]{
+    position: relative;
+    border:none;
+    left:75%;
+    top:15px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: rgb(19, 124, 127);  
+    color:white 
+}
+
+/* background-color: #129702; */
